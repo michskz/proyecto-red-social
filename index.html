@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Web</title>
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/estilo.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+
+<div class="row">
+    <div class="col-"></div>
+    <div class="col-12">
+      <!--HOLAA PROFEEE-->  
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">
+        <img src="assets/media/8c01e4f9934f97f61af9df5f3ab83819-removebg-preview.png" 
+            alt=""
+            width="30"
+            height="24"
+            class="d-inline-block align-text-top"
+            />UnityLink
+          </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a class="nav-link logged-in" href="extra.html">IA</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signin-modal">Signin</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link logged-out" href="#" data-bs-toggle="modal" data-bs-target="#signup-modal">Signup</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link logged-in" id="logout" href="#">Logout</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+ 
+
+
+  <!--Cómo estáss?-->
+<div id="rows">
+
+   <!-- Acá se mostrarán las tasks de la base de datos -->
+   <div class="col-md-6" id="tasks-container"></div>
+
+  <main class="row w-75 mx-auto" id="task-main-container">
+    <div class="col-md-6" id="task-form-container">
+      <div id="create-tasks">
+        <form id="create-form">
+          
+          <label for="task-content"></label>
+          <textarea id="task-content"></textarea>
+          
+          <button type="submit" id="btn-task-save">Create Task 🤞</button>
+          <br><br>
+        </form>
+      </div>
+    </div>
+  </main>
+
+ 
+</div>
+  <!-- Signin modal -->
+  <div class="modal fade" id="signin-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="ring">
+        <i style="--clr:#45f3f3;"></i>
+        <i style="--clr:#ff2770;"></i>
+        <i style="--clr:#9700ff;"></i>
+        <div class="login">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Signin</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="signin-form">
+              <label for="email-signin" class="mb-1">Email</label>
+              <div class="inputBx">
+                <input id="email-signin" type="email" class="form-control mb-3" placeholder="Email" required>
+              </div>
+              <label for="password-signin" for="password-signin" class="mb-1">Password</label>
+              <div class="inputBx">
+                <input id="password-signin" type="password" class="form-control mb-3" placeholder="******" required>
+              </div>
+              <button type="submit" class="btn btn-primary form-control mb-2">Login</button>
+              <hr />
+              <button id="google-login" class="btn btn-info">Google</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Signup modal -->
+  <div class="modal fade" id="signup-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content" id="ring">
+        <i style="--clr:#45f3f3;"></i>
+        <i style="--clr:#ff2770;"></i>
+        <i style="--clr:#9700ff;"></i>
+        <div class="login">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="exampleModalLabel">Signup</h1>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <form id="signup-form">
+              <label for="email-signup" class="mb-1">Email</label>
+              <div class="inputBx">
+                <input id="email-signup" type="email" class="form-control mb-3" placeholder="Email" required>
+              </div>
+              <label for="password-signup" class="mb-1">Password</label>
+              <div class="inputBx">
+                <input id="password-signup" type="password" class="form-control mb-3" placeholder="******" required>
+              </div>
+              <button type="submit" class="btn btn-primary">Register</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+ 
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
+  <script type="module" src="assets/js/main.js"></script>
+</div> 
+          
+         
+         
+    </div>
+
+    </div>
+    <div class="col-"></div>
+</div>
+
+
+      <footer>
+        
+      </footer>
+
+</body>
+</html>

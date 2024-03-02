@@ -1,0 +1,87 @@
+/* style.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    background-image: url(/1055698457-preview.mp4);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: violet;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+
+#video-bg {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1; /* Asegura que el video esté detrás de los otros elementos */
+
+}
+h1 {
+    color: #6a0dad;
+    text-align: center;
+}
+
+.message-container {
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+.sender {
+    background-color: #6a0dad;
+    color: #fff;
+    text-align: right;
+    margin-bottom: 10px;
+}
+
+.receiver {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+.message {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#message-input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    resize: none;
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #6a0dad;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+button:hover {
+    background-color: #4e086f;
+}
